@@ -1,0 +1,34 @@
+factorial :: Int -> Int  -- entrada / salida -- 
+
+factorial x = product [1 .. x ] -- se calcula la funcion --
+
+
+menor ::Float -> Float -> Float -- 2 float para la entrada y uno para la salida --
+
+--desarollo de la  fuc--
+
+menor x y = if x<y then  x else y 
+
+
+casi :: Float -> Float -> Bool 
+casi :: x y  = abs (x - y) < 0.0001
+
+--| "guardas"  elif de haskell--
+
+--| flujo de control, tipo funcion x partes -- 
+-- | otherwise "si no se cumplio ninguna de las otras condicones "--
+
+discriminante :: Float -> Float-> Float -> Float 
+
+discriminante x,y,z = x ** 2 - 4* x* z 
+
+raices ::Float ->Float ->Float -> Int
+
+raices x y z 
+	| discriminante x y z == 0.0 = 1 
+	
+	| discriminante x y z > 0.0 = 2
+	
+	| otherwise = 0
+
+	where disc = discriminate(x,y,z ) "Similar  a una variable local  , se calcu el discri , y se guarda el valor " 
